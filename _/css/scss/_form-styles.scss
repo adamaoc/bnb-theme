@@ -1,0 +1,29 @@
+
+label, input, textarea {
+	width: 98%;
+	margin-bottom: 5px;
+}
+input {
+	font-size: 1.2em;
+	line-height: 1.5;
+	height: 1.5em;
+}
+textarea {
+	height: 4.5em;
+	width: 98%;
+}
+.submit {
+	height: 2.2em;
+	line-height: 1.7;
+}
+.errors {
+	p {
+		font-size: 11px;
+		color: #cc5555;
+		font-style: italic;
+	}
+}
+.submitted-message {
+	margin-top: 15px;
+	min-height: 180px;
+}

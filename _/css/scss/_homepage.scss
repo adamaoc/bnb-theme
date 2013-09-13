@@ -1,0 +1,131 @@
+section {
+	& * {
+		@include box-sizing(border-box);
+	}
+	@include box-sizing(border-box);
+	margin: 0 0 30px;
+	padding: 10px 20px;
+	background: #e9e8e8;
+	@include box-shadow(0 -9px 7px -7px #555);
+	overflow: hidden;
+}
+
+.featured-content {
+	padding: 20px 0 0;
+	background: white;
+	width: 100%;
+	margin: 0 auto 20px;
+	overflow: hidden;
+	@include box-shadow(none);
+	h2 {
+		margin-left: 20px;
+		margin-bottom: 10px;
+	}
+	.visibleNearby .rsSlide img {
+		margin-top: 0px !important;
+	}
+	#gallery-1 {
+		background: #fff;
+		.rsSlide {
+			background: #fff;
+		}
+		.rsGCaption {
+			background: white;
+			color: #555;
+			font-style: italic;
+		}
+	}
+	.rsDefault, .rsDefault .rsOverflow, .rsDefault .rsSlide, .rsDefault .rsVideoFrameHolder, .rsDefault .rsThumbs {
+		background: white;
+	}
+}
+
+.what-we-do {
+	p {
+		text-align: justify;
+		padding-right: 30px;
+		padding-bottom: 0.8em;
+	}
+	ul {
+		margin-left: 30px;
+		padding-right: 30px;
+		li {
+			text-align: justify;
+			list-style: disc;
+			font-size: 1.4em;
+		}
+	}
+}
+.homepost { 
+	margin: 10px 0;
+	padding-left: 10px; 
+	@include box-sizing(border-box);
+	p {
+		margin: 5px 0;
+		width: 100%; 
+		text-align: justify;
+	}
+	.homepost-thumb {
+		display: block;
+		width: 100%;
+		max-width: 350px;
+		margin: 2px auto;
+		@include boxshadow();
+		@include bp(babybear) {
+			margin: 2px 0;
+		}
+		img {
+			width: 100%;
+			margin-bottom: -5px;
+		}
+	}
+	@include bp(babybear) {
+		width: 50%;
+		padding: 5px 15px;
+		float: left;
+	}
+}
+
+.quick-contact {
+	@include bp(babybear) {
+		width: 35%;
+		padding: 5px 15px;
+		float: left;
+		@include border-radius(0 5px 5px 0);
+	}
+}
+
+.testimonials {
+	background: none;
+	@include box-shadow(none);
+	blockquote {
+		width: 80%;
+		margin: 20px auto;
+		padding: 10px 15px; 
+		background: #e9e8e8;
+		@include border-radius(5px);
+		@include boxshadow();
+		color: #666;
+		h3 {
+			font-style: italic;
+			color: inherit;
+		}
+		time {
+			display: block;
+			font-size: 1.0em;
+			text-transform: uppercase;
+			color: inherit;
+		}
+		p {
+			text-align: justify;
+			color: inherit;
+			font-style: italic;
+		}
+	}
+	@include bp(babybear) {
+		float: left;
+		width: 55%;
+		padding: 5px 15px; 
+		margin-left: 30px;
+	}
+}

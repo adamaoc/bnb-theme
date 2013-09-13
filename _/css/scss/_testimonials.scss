@@ -1,0 +1,21 @@
+.testamonials-page {
+	.testimonials {
+		width: 100%;
+	}
+	blockquote {
+		width: 100%;
+		@include bp(babybear) {
+			width: 30%;
+			float:left;
+			margin-right: 2%; 
+			opacity: 0.7;
+			@include transition(all 0.3s ease-in-out);
+			&:hover {
+				opacity: 1;
+				border-color: darken($secondary-desing-color, 10%);
+				@include box-shadow(2px 3px 9px #666);
+			}
+		}
+		@include sideborder($secondary-desing-color);
+	}
+}

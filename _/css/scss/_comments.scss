@@ -1,0 +1,24 @@
+#respond, #comments, .commentlist {
+	width: 100%;
+	h2 {
+		text-align: center;
+	}
+	label {
+		display: block;
+		width: 100%;
+		margin: 5px 0 2px;
+	}
+	textarea {
+		width: 80%;
+		margin: 10px 0;
+	}
+
+	@include bp(babybear) {
+		width: 80%;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	.avatar {
+		border-radius: 50%;
+	}
+}

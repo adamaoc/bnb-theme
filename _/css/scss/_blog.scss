@@ -1,0 +1,60 @@
+.blog {
+	.post {
+		text-align: justify;
+		margin-bottom: 15px;
+		padding-left: 10px;
+		@include box-sizing(border-box);
+		@include sideborder($secondary-desing-color);
+		@include bp(babybear) {
+			width: 50%;
+			max-width: 350px;
+			margin-right: 20px;
+			float: left;
+		}
+		
+		.meta {
+			clear: both;
+		}
+	}
+	.navigation {
+		clear: both;
+		border-bottom: 1px solid #ccc;
+		display: block;
+		margin: 10px;
+		padding: 10px;
+	}
+}
+
+.single {	
+	.post {
+		border-bottom: 1px solid #888;
+		@include bp(babybear) {
+			max-width: 980px;
+			margin: 0 auto;
+		}
+		h1 {
+			padding-left: 10px;
+			@include sideborder($secondary-desing-color);
+		}
+		p {
+			text-align: justify;
+			margin-bottom: 10px;
+		}
+		img {
+			max-width: 100%;
+		}
+
+		.post-thumb {
+			@include bp(babybear) {
+				float: left;
+				margin-right: 15px;
+			}
+			img {
+				@include boxshadow;	
+			}
+			.caption {
+				text-indent: -9999px;
+			}	
+		}
+	}
+}

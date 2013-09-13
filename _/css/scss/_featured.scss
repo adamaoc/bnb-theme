@@ -1,0 +1,28 @@
+.featured-wrap {
+	display: inline-block;
+	margin: 0 10px 10px 0;
+	a {
+		display: block;
+		position: relative;
+		@include transition(all 0.3s ease-in-out);
+		@include sideborder($secondary-desing-color);
+		@include boxshadow();
+		h3 {
+			background: #333;
+			background: rgba(black, 0.7);
+			position: absolute;
+			bottom: 2em;
+			padding: 5px 10px; 
+		}
+		img {
+			margin-bottom: -5px;
+		}
+		&:hover {
+			border-left: 10px solid darken($secondary-desing-color, 10%);
+		}
+	}
+}
+.photo-wrapper {
+	width: 80%;
+	margin: 10px auto;
+}

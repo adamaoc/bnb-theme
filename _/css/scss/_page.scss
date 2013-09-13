@@ -1,0 +1,27 @@
+.page {
+	@include bp(babybear) {
+		.post {
+			width: 60%;
+			float: left;
+			border-right: 1px solid #ccc;
+			min-height: 300px;
+			padding-right: 20px;
+			text-align: justify;
+			font-size: 1.4em;
+			@include box-sizing(border-box);
+			p {
+				font-size: 1em;
+				margin-bottom: 10px;
+			}
+		}
+		#sidebar {
+			width: 30%;
+			float: left;
+			@include box-sizing(border-box);
+			.quick-contact {
+				width: 100%;
+				@include box-shadow(1px 2px 8px #888);
+			}
+		}
+	}
+}

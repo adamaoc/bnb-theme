@@ -1,0 +1,93 @@
+
+// portfolio css ..... 
+
+
+.portfolio-wrap {
+	display: inline-block;
+	a {
+		display: block;
+		position: relative;
+		@include sideborder($secondary-desing-color);
+		@include boxshadow();
+		@include transition(all 0.3s ease-in-out);
+		h3 {
+			background: #333;
+			background: rgba(black, 0.7);
+			position: absolute;
+			bottom: 2em;
+			padding: 5px 10px; 
+		}
+		img {
+			margin-bottom: -5px;
+		}
+		&:hover {
+			border-left: 10px solid darken($secondary-desing-color, 10%);
+		}
+	}
+}
+
+
+.entry-title {
+	@include sideborder($secondary-desing-color);
+	padding-left: 10px;
+}
+.entry-content {
+	overflow: hidden;
+	border-bottom: 1px solid #888;
+	margin-bottom: 15px;
+	position: relative;
+	* {
+		@include box-sizing(border-box);
+	}
+	p {
+		width: 100%;
+		padding: 15px;
+		@include bp(babybear) {
+			width: 40%;
+			float: left;
+			padding-right: 20px;
+			text-align: justify;
+		}
+	}
+	.gallery {
+		width: 100%;
+		@include bp(babybear) {
+			width: 60%;
+			float: right;
+		}
+		.gallery-item {
+			margin: 0 !important;
+			padding: 0 10px 10px 0;
+			img {
+				border: none !important;
+				opacity: 0.7;
+				@include transition(all 0.3s ease-in-out);
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.meta {
+		clear: left;
+		padding-top: 10px; 
+		font-size: 1em;
+		font-style: italic;
+	}
+}
+
+.paypal-from {
+	width: 90%;
+	float: left;
+	padding: 10px;
+	font-size: 120%;
+	@include bp(babybear) {
+		width: 35%;
+	}
+	input[name=submit] {
+		width: 100px;
+	}
+	input, select {
+		margin: 5px 0;
+	}
+}

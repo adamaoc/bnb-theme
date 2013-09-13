@@ -1,0 +1,36 @@
+$main-design-color: #7accc8;
+$secondary-desing-color: #FDF001;
+$light-design-color: #faeed7;
+
+$main-anchor-color: #EC008C;
+$main-anchor-color-hover: darken($main-anchor-color, 30%);
+
+$body-background-color: #f2f2f2;
+
+$base-site-padding: 15px;
+
+$main-box-shadow: 1px 2px 8px #ddd;
+
+/* 
+	logo pink = EC008C
+  logo yellow = FDF001
+*/
+
+@mixin boxshadow() {
+	@include box-shadow(1px 2px 8px #888);
+}
+@mixin sideborder($color) {
+  border-left: 10px solid $color;
+}
+
+@mixin bp($point) {
+  @if $point == papabear {
+    @media (min-width: 1600px) { @content; }
+  }
+  @else if $point == mamabear {
+    @media (min-width: 1250px) { @content; }
+  }
+  @else if $point == babybear {
+    @media (min-width: 650px)  { @content; }
+  }
+}

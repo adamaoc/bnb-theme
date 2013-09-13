@@ -1,0 +1,70 @@
+/* line 3, ../scss/single.scss */
+.entry-content {
+  overflow: hidden;
+  border-bottom: 1px solid #888;
+  margin-bottom: 15px;
+  position: relative;
+}
+/* line 8, ../scss/single.scss */
+.entry-content * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 11, ../scss/single.scss */
+.entry-content p {
+  width: 40%;
+  float: left;
+  padding-right: 20px;
+  text-align: justify;
+}
+/* line 17, ../scss/single.scss */
+.entry-content .gallery {
+  width: 60%;
+  float: right;
+}
+/* line 20, ../scss/single.scss */
+.entry-content .gallery .gallery-item {
+  margin: 0 !important;
+  padding: 0 10px 10px 0;
+}
+/* line 23, ../scss/single.scss */
+.entry-content .gallery .gallery-item img {
+  border: none !important;
+  opacity: 0.7;
+}
+/* line 26, ../scss/single.scss */
+.entry-content .gallery .gallery-item img:hover {
+  opacity: 1;
+}
+/* line 32, ../scss/single.scss */
+.entry-content .meta {
+  clear: left;
+  padding-top: 10px;
+  font-size: 1em;
+  font-style: italic;
+}
+/* line 38, ../scss/single.scss */
+.entry-content .admin-edit {
+  margin-top: 20px;
+  width: 30%;
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-border-radius: 0 8px 8px 0;
+  -moz-border-radius: 0 8px 8px 0;
+  -ms-border-radius: 0 8px 8px 0;
+  -o-border-radius: 0 8px 8px 0;
+  border-radius: 0 8px 8px 0;
+}
+/* line 44, ../scss/single.scss */
+.entry-content .admin-edit:hover {
+  background: black;
+}
+/* line 47, ../scss/single.scss */
+.entry-content .admin-edit a {
+  display: block;
+  width: 100%;
+  line-height: 2.5;
+  font-size: 1.3em;
+  padding-left: 8px;
+}
