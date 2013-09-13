@@ -53,12 +53,12 @@
 	</script>
 <?php }; ?>
 <!-- Asynchronous google analytics; this is the official snippet.
-	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
+	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.-->
 	 
-<script>
+<script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-XXXXXX-XX']);
+  _gaq.push(['_setAccount', 'UA-9674179-10']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -68,7 +68,7 @@
   })();
 
 </script>
--->
+
 	
 </body>
 
