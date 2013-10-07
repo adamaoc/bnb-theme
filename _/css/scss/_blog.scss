@@ -28,6 +28,7 @@
 .single {	
 	.post {
 		border-bottom: 1px solid #888;
+		overflow: hidden;
 		@include bp(babybear) {
 			max-width: 980px;
 			margin: 0 auto;
