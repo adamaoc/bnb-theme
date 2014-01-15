@@ -112,6 +112,23 @@ register_post_type('portfolios', array( 'label' => 'Portfolios','description' =>
   'parent' => 'Parent Portfolio',
 ),) );
 
+register_post_type('client_proofs', array( 'label' => 'Client Proofs','description' => 'Proofs for Client photo shoots.','public' => true,'show_ui' => true,'show_in_menu' => true,'capability_type' => 'post','hierarchical' => true,'rewrite' => array('slug' => ''),'query_var' => true,'has_archive' => true,'exclude_from_search' => false,'menu_position' => 5,'supports' => array('title','editor','custom-fields','comments','revisions','thumbnail','page-attributes',),'labels' => array (
+  'name' => 'Client Proofs',
+  'singular_name' => 'Client Proof',
+  'menu_name' => 'Client Proofs',
+  'add_new' => 'New Client Proof',
+  'add_new_item' => 'Add New Client Proof',
+  'edit' => 'Edit',
+  'edit_item' => 'Edit Client Proof',
+  'new_item' => 'New Client Proof',
+  'view' => 'View Client Proof',
+  'view_item' => 'View Client Proof',
+  'search_items' => 'Search Client Proofs',
+  'not_found' => 'No Client Proofs Found',
+  'not_found_in_trash' => 'No Client Proofs Found in Trash',
+  'parent' => 'Parent Client Proof',
+),) );
+
 register_post_type('feature_photos', array( 'label' => 'Featured Photos','description' => 'One photo to feature work. ','public' => true,'show_ui' => true,'show_in_menu' => true,'capability_type' => 'post','hierarchical' => false,'rewrite' => array('slug' => ''),'query_var' => true,'has_archive' => true,'exclude_from_search' => false,'menu_position' => 5,'supports' => array('page-attributes',),'labels' => array (
   'name' => 'Featured Photos',
   'singular_name' => 'Featured Photo',
