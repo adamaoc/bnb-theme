@@ -33,7 +33,7 @@ Template Name: home_page_template
 		<h2>What We Do:</h2>
 		<p>
 			<?php 
-				$about_query = new WP_Query(array( 'post_type' => 'page', 'page_id' => 8));
+				$about_query = new WP_Query(array( 'post_type' => 'page', 'pagename' => 'about'));
 				while ( $about_query->have_posts() ) :
 					$about_query->the_post();
 					the_Content();
