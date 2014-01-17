@@ -206,18 +206,22 @@ img {
 	#page-wrap {
 		overflow: hidden;
 	}
+	.attachment-img {
+		padding: 0 22px;
+	}
 }
 .img-navi {
 	.prev-img {
 		position: absolute;
 		top: 50%;
 		left: 0px;
-		margin-top: -100px;
-		background: #000;
+		height: 50px;
+		width: 50px;
+		margin-top: -25px;
 		a {
-			color: #fff;
-			padding: 5px 20px;
-			font-size: 140%;
+			display: block;
+			width: 50px;
+			height: 50px;
 		}
 	}
 
@@ -225,12 +229,13 @@ img {
 		position: absolute;
 		top: 50%;
 		right: 0px;
-		margin-top: -100px;
-		background: #000;
+		height: 50px;
+		width: 50px;
+		margin-top: -25px;
 		a {
-			color: #fff;
-			padding: 5px 20px;
-			font-size: 140%;
+			display: block;
+			width: 50px;
+			height: 50px;
 		}
 	}
 }
