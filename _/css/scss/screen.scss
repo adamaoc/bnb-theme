@@ -17,11 +17,14 @@
 @import "homepage";
 
 @import "form-styles";
+
 /* portfolio inner page */
-.portfolios, .page-id-53 {
+.portfolios, .page-template-page-portfolio-php {
 	@import "portfolios";
 }
-
+.portfolios, .page-template-page-client-proof-php {
+	@import "portfolios";
+}
 /* blog styles */
 @import "blog";
 

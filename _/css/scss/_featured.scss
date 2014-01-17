@@ -18,6 +18,7 @@
 			margin-bottom: -5px;
 		}
 		&:hover {
+			color: lighten($main-anchor-color, 30%);
 			border-left: 10px solid darken($secondary-desing-color, 10%);
 		}
 	}

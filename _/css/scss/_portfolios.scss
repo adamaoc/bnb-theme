@@ -8,6 +8,10 @@
 	a {
 		display: block;
 		position: relative;
+		width: 300px;
+		height: 200px;
+		overflow: hidden;
+		background-color: lighten($secondary-desing-color, 25%);
 		@include sideborder($secondary-desing-color);
 		@include boxshadow();
 		@include transition(all 0.3s ease-in-out);
@@ -20,8 +24,10 @@
 		}
 		img {
 			margin-bottom: -5px;
+			width: 100%;
 		}
 		&:hover {
+			color: lighten($main-anchor-color, 30%);
 			border-left: 10px solid darken($secondary-desing-color, 10%);
 		}
 	}
