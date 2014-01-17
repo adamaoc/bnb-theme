@@ -18,34 +18,53 @@
 
 #menu-main-nav {
 	display: none;
+	padding: 0;
+	max-width: 1080px;
+	margin: 0 auto;
+	@include clearfix();
 	@include bp(babybear) {
 		display: block;
-		@include boxshadow();
 	}
 	li {
-		display: inline-block;
+		display: block;
 		width: 100%;
 		text-align: center;
 		border-bottom: 1px solid #f1f1f1;
+		padding: 0;
+		@include transition(all 0.3s ease-in-out);
 		@include bp(babybear) {
-			width: auto;
-			border-right: 1px solid #333; 
+			width: 25%;
+			float: left;
+			border-right: 1px solid darken(#E9E8E8, 10%);
+			border-bottom: none;
+			&:nth-child(4) {
+				border-right: none;
+			}
 			&:last-child {
 				border-right: none;
 			}
 		}
+		@include bp(mamabear) {
+			width: 12.5%;
+			&:nth-child(4) {
+				border-right: 1px solid darken(#E9E8E8, 10%);
+			}
+		}
 		a {
+			width: 100%;
 			display: block;
 			color: #333; 
 			font-size: 1.4em;
 			text-transform: uppercase;
-			line-height: 2em;
+			height: 2.5em;
+			line-height: 2.5em;
+			@include transition(all 0.3s ease-in-out);
 			&:hover {
 				color: $main-anchor-color-hover;
-			}
-			@include bp(babybear) {
-				padding: 0 15px; 
+				background: lighten(yellow, 10%);
 			}
 		}
 	}
 }
+
+// responsive navigation //

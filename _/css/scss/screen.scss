@@ -5,12 +5,14 @@
 @import "compass/css3";
 @import "compass/reset";
 @import "wordpress-styles";
+@import "compass/utilities/general/clearfix";
 
 @import "jquery-rs";
 @import "rs-default-skin";
 
 @import "variables";
 @import "base";
+@import "responsive_grid";
 @import "nav";
 @import "homepage";
 
