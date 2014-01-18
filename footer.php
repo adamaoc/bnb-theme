@@ -18,8 +18,7 @@
 <!-- this is where we put our custom functions -->
 <script class="rs-file" src="<?php bloginfo('template_directory'); ?>/_/js/rs.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
-
-<?php if (is_page(4)) { ?>
+<?php if (is_page('homepage')) { ?>
 	<script>
 	// royal slider js
 		var si = jQuery('#gallery-1').royalSlider({

@@ -68,15 +68,11 @@ section {
 	.homepost-thumb {
 		display: block;
 		width: 100%;
-		max-width: 350px;
 		margin: 2px auto;
 		@include boxshadow();
-		@include bp(babybear) {
-			margin: 2px 0;
-		}
 		img {
-			width: 100%;
-			margin-bottom: -5px;
+			width: 100% !important;
+			height: auto !important;
 		}
 	}
 	@include bp(babybear) {
