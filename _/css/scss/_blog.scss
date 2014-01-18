@@ -3,17 +3,36 @@
 		text-align: justify;
 		margin-bottom: 15px;
 		padding-left: 10px;
+		width: 100%;
 		@include box-sizing(border-box);
 		@include sideborder($secondary-desing-color);
 		@include bp(babybear) {
 			width: 50%;
-			max-width: 350px;
-			margin-right: 20px;
 			float: left;
+			padding-right: 10px;
+			&:nth-child(2n+3) {
+				clear: left;
+			}
 		}
-		
+		@include bp(mamabear) {
+			width: 33.3%;
+			&:nth-child(2n+3) {
+				clear: none;
+			}
+			&:nth-child(4) {
+				clear: left;
+			}
+		}
 		.meta {
 			clear: both;
+		}
+		.homepost-thumb {
+			display: block;
+			width: 100%;
+			img {
+				width: 100%;
+				height: auto !important;
+			}
 		}
 	}
 	.navigation {
@@ -22,6 +41,7 @@
 		display: block;
 		margin: 10px;
 		padding: 10px;
+		font-size: 1.8em;
 	}
 }
 

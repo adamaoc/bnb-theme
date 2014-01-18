@@ -25,12 +25,12 @@ $main-box-shadow: 1px 2px 8px #ddd;
 
 @mixin bp($point) {
   @if $point == papabear {
-    @media (min-width: 1600px) { @content; }
+    @media (min-width: 1400px) { @content; }
   }
   @else if $point == mamabear {
-    @media (min-width: 1250px) { @content; }
+    @media (min-width: 850px) { @content; }
   }
   @else if $point == babybear {
-    @media (min-width: 650px)  { @content; }
+    @media (min-width: 550px)  { @content; }
   }
 }
