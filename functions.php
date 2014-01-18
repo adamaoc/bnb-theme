@@ -1,5 +1,21 @@
 <?php
-        // Translations can be filed in the /languages/ directory
+
+// registering menus
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu'   => __( 'Header Menu' ),
+      'social-links'  => __( 'Social Links' ),
+      'footer-menu'   => __( 'Footer Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
+
+add_filter('show_admin_bar', '__return_false');
+
+
+// Translations can be filed in the /languages/ directory
         load_theme_textdomain( 'html5reset', TEMPLATEPATH . '/languages' );
  
         $locale = get_locale();

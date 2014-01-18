@@ -7,7 +7,11 @@
 		</footer>
 
 	</div>
-
+	
+	<div class="social-icons">
+		<?php wp_nav_menu( array('theme_location' => 'social-links', 'menu_class' => 'social-menu') ); ?>
+	</div>
+	
 	<?php wp_footer(); ?>
 
 
