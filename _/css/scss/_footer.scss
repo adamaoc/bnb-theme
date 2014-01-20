@@ -1,0 +1,39 @@
+.footer-menu {
+	@include clearfix();
+	li {
+		display: inline-block;
+		padding: 0 1em;
+		border-right: 1px solid #ccc;
+		&:last-child {
+			border-right: none;
+		}
+	}
+}
+
+.footer-social-menu {
+	@include clearfix();
+	li {
+		display: inline-block;
+		padding: 1em;
+		a {
+			display: block;
+			width: 25px;
+			height: 25px;
+			background-size: contain;
+			background-position: right center;
+			background-color: #999;
+			background-repeat: no-repeat;
+			border-radius: 100%;
+			text-indent: -9999px;
+			&:hover {
+				background-color: $main-anchor-color;
+			}
+		}
+		a[title=facebook] {
+			background-image: url('../../img/facebook_logo_light.png');
+		}
+		a[title=pinterest] {
+			background-image: url('../../img/pinterest_badge_light.png');
+		}
+	}
+}

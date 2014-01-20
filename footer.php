@@ -1,9 +1,12 @@
 		<footer id="footer" class="source-org vcard copyright">
-			<small>
-				&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?>
-				- <a href="https://www.facebook.com/profile.php?id=7943694">Facebook</a> - <br />
-				site designed and developed by <a href="http://ampnetmedia.com">ampnet(media)</a>
-			</small>
+			<div class="inner-wrap">
+				<?php wp_nav_menu( array('theme_location' => 'social-links', 'menu_class' => 'footer-social-menu') ); ?>	
+				<?php wp_nav_menu( array('theme_location' => 'footer-menu', 'menu_class' => 'footer-menu') ); ?>
+				<small>
+					&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?> -
+					site designed and developed by <a href="http://ampnetmedia.com">ampnet(media)</a>
+				</small>
+			</div>
 		</footer>
 
 	</div>
