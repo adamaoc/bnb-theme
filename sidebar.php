@@ -2,7 +2,7 @@
 
     <section class="quick-contact">
         <h2>Quick Contact</h2>
-        <?php include "_/inc/contactform.php"; ?>
+        <?php require_once "_flex/templates/contact-form.php"; ?>
     </section>
 <?php if(!is_page('about', 'contact')) { ?>
     <section class="testimonials">

@@ -1,9 +1,8 @@
 .page {
 	@include bp(babybear) {
 		.post {
-			width: 60%;
+			width: 65%;
 			float: left;
-			border-right: 1px solid #ccc;
 			min-height: 300px;
 			padding-right: 20px;
 			text-align: justify;
@@ -15,7 +14,7 @@
 			}
 		}
 		#sidebar {
-			width: 30%;
+			width: 35%;
 			float: left;
 			@include box-sizing(border-box);
 			.quick-contact {

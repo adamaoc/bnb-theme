@@ -1,3 +1,66 @@
+<?php 
+$directory = $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/bnb-theme';
+$init = $directory.'/_flex/core/init.php';
+require_once $init;
+
+require_once $flexConfig;
+require_once $flexDB;
+require_once $flexValidate;
+require_once $flexInput;
+require_once $flexToken;
+require_once $flexSessions;
+require_once $flexRedirect;
+
+
+// contact message sent //
+if(Input::exists()) {
+	if(Token::check(Input::get('token'))) {
+		$validate = new Validate();
+
+		$validation = $validate->check($_POST, array(
+			'name' => array(
+				'required' => true,
+				'min' => 4),
+			'company' => array(
+				'required' => false,
+				'min' => 3),
+			'email' => array(
+				'required' => true,
+				'email' => true),
+			'phone' => array(
+				'required' => false,
+				'min' => 10,
+				'max' => 13),
+			'message' => array(
+				'required' => true,
+				'min' => 4)
+		));
+
+		if($validation->passed()) {
+			$message = htmlspecialchars($_POST['message']);
+			sendMessage($_POST['name'], $_POST['company'], $_POST['email'], $_POST['phone'], $message, $_POST['site']);
+
+			Redirect::to("/success/");
+			
+		} else {
+			
+			$errors = array();
+			foreach($validate->errors() as $error) {
+				$errors[] .= $error;
+			}
+
+			Session::flash('errors', $errors);
+			Redirect::to('#form');
+		}
+	}
+}
+
+if(is_page('success')) {
+	if(!Session::exists('success')) {
+		Redirect::to('/contact/');
+	}
+}
+?>
 <!DOCTYPE html>
 
 <!--[if lt IE 7 ]> <html class="ie ie6 no-js" <?php language_attributes(); ?>> <![endif]-->

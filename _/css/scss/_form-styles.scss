@@ -1,26 +1,26 @@
 
 label, input, textarea {
-	width: 98%;
+	width: 100%;
 	margin-bottom: 5px;
+	font-size: 1.6em;
+	line-height: 1.8;
+	height: 1.8em;
+	@include box-sizing(border-box);
 }
-input {
-	font-size: 1.2em;
-	line-height: 1.5;
-	height: 1.5em;
-}
+
 textarea {
-	height: 4.5em;
-	width: 98%;
+	height: 5.5em;
 }
 .submit {
-	height: 2.2em;
-	line-height: 1.7;
+	width: 100%;
 }
-.errors {
-	p {
-		font-size: 11px;
+.error-box {
+	margin-bottom: 10px;
+	li {
+		font-size: 14px;
 		color: #cc5555;
 		font-style: italic;
+		list-style: inside square;
 	}
 }
 .submitted-message {

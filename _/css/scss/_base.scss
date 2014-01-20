@@ -124,13 +124,17 @@ img {
 }
 
 .button {
-	margin: 10px;
-	max-width: 50%;
+	margin: 10px 0;
 	font-weight: bold;
 	text-transform: uppercase;
 	background: $secondary-desing-color;
 	height: 2.2em;
-	line-height: 1.7;
+	line-height: 2.2em;
+	border: none;
+	color: lighten(#333, 10%);
+	&:hover {
+		background-color: darken($secondary-desing-color, 5%);
+	}
 }
 
 #footer {
@@ -145,12 +149,14 @@ img {
 	@include box-sizing(border-box);
 	width: 100%;
 	padding: 15px; 	
+	max-width: 1080px;
+	margin: 0 auto;
 	h1 {
 		margin: 15px 0;
 	}
 }
 .inner {
-	max-width: 980px;
+	max-width: 1080px;
 	margin: 0 auto;
 }
 

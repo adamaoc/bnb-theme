@@ -1,4 +1,50 @@
 <?php
+// EMAIL FORM FUNCTION //
+function sendMessage($name, $company, $email, $phone, $message, $site) {
+  
+  $EmailFrom = $email;
+  $EmailTo = "adamaoc@gmail.com";
+
+  // prepare email body text
+  $Body = "";
+  $Body .= "Name: ";
+  $Body .= $name;
+  $Body .= " (".$company.")";
+  $Body .= "\n";
+  $Body .= "Email: ";
+  $Body .= $email;
+  $Body .= "\n";
+  $Body .= "Phone: ";
+  $Body .= $phone;
+  $Body .= "\n";
+  $Body .= "Message: ";
+  $Body .= $message;
+  $Body .= "\n";
+
+  $Subject = "";
+  $Subject .= "Contact message from [";
+  $Subject .= $site;
+  $Subject .= "]";
+
+  $success = array(
+    'name' => $name, 
+    'company' => $company, 
+    'email' => $email, 
+    'phone' => $phone, 
+    'reason' => $reason, 
+    'message' => $message);
+
+  // set session
+  Session::flash('success', $success);
+  
+  // send email 
+  mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+  mail('contact@ampnetmedia.com', $Subject, $Body, "From: <$EmailFrom>");
+}
+
+// OFF EMAIL FORM FUNCTION //
+
+
 
 // registering menus
 function register_my_menus() {
