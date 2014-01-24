@@ -3,7 +3,7 @@
 function sendMessage($name, $company, $email, $phone, $message, $site) {
   
   $EmailFrom = $email;
-  $EmailTo = "adamaoc@gmail.com";
+  $EmailTo = "laurenmanry@dfwbelliesandbabies.com";
 
   // prepare email body text
   $Body = "";
