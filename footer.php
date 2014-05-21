@@ -4,7 +4,7 @@
 				<?php wp_nav_menu( array('theme_location' => 'footer-menu', 'menu_class' => 'footer-menu') ); ?>
 				<small>
 					&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?> -
-					site designed and developed by <a href="http://ampnetmedia.com">ampnet(media) - DFW Web Design, Development, and SEO</a>
+					site designed and developed by <a href="http://ampnetmedia.com" target="_blank" title="ampnet(media) - DFW Web Design, Development, and SEO">ampnet(media)</a>
 				</small>
 			</div>
 		</footer>
